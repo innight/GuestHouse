@@ -533,27 +533,28 @@ table {
 
 /* Links
 --------------------------------------------- */
-a {
-    color: #4169e1;
+
+
+a:link,
+a:visited {
+    /* or a[href] */
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
 }
 
 a:visited {
-    color: #800080;
+    text-decoration: none;
 }
 
-a:hover,
-a:focus,
+a:hover {
+    text-decoration: none;
+}
+
 a:active {
-    color: #191970;
-}
-
-a:focus {
-    outline: thin dotted;
-}
-
-a:hover,
-a:active {
-    outline: 0;
+    text-decoration: none;
 }
 
 /* Forms
@@ -980,6 +981,14 @@ body {
     --scolor: #00c2a9;
     --tcolor: #b7b7b7;
     --qcolor: #f6f5fa;
+
+    /*========== Margenes ==========*/
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
 }
 
 body,
@@ -1513,8 +1522,63 @@ header.masthead .intro-text .intro-heading {
 }
 
 .propertymasthead h1 {
-    text-shadow: 0px 0px 12px rgba(0,0,0,0.8); 
+    text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8);
 }
+
+
+/****************** Property Management Details **********************/
+
+.PropertyManagementDetails {
+    margin-top: 8%;
+}
+
+.PropertyManagementDetails .row .col-md7,
+.col-md5 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.PropertyManagementDetails .para-1 {
+    margin-top: 7%;
+    font-size: 23px;
+}
+
+.main-content {
+    min-height: 230px;
+}
+
+.sidebar-content {
+    min-height: 100px;
+    margin-bottom: 30px;
+    background: #b4bac0;
+    text-align: center;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.foo:hover {
+    background-color: var(--pcolor);
+    color: #f8f9fa;
+    cursor: pointer;
+}
+
+.foo-active {
+    background-color: var(--pcolor);
+    cursor: pointer;
+    color: #f8f9fa;
+}
+
+.foo-active:hover {
+    color: rgb(64, 64, 64);
+    background-color: #b4bac0;
+}
+
+/****************** Services Details **********************/
+
+#ServiceManagement .jumbotron{
+background-color: var(--scolor);
+}
+
+
 
 .md-form input:not([type]),
 .md-form input[type="text"]:not(.browser-default),
