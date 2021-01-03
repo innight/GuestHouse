@@ -1573,15 +1573,20 @@ header.masthead .intro-text .intro-heading {
 }
 
 /****************** Services Details **********************/
-
+/* 
 #ServiceManagement .jumbotron {
-    background-color: var(--scolor);
-}
+    background-color:#00D9C3;
+} */
+
+#ServiceManagement  {
+    background-color:#00D9C3;
+} 
+
 
 .pcard-list {
     display: flex;
     padding: 3rem;
-    /* overflow-x: scroll; */
+    overflow-x: scroll;
 }
 
 .pcard {
@@ -1593,7 +1598,7 @@ header.masthead .intro-text .intro-heading {
     min-width: 250px;
     padding: 1.5rem;
     border-radius: 16px;
-    background: rgb(255,255,255);
+    background: #f5f5f5;
     /* box-shadow: -1rem 0 3rem #000; */
     background-clip: border-box;
     border: 0 solid rgba(0,0,0,.125);
@@ -1628,6 +1633,14 @@ header.masthead .intro-text .intro-heading {
 
 .pcard:not(:first-child) {
     margin-left: -130px;
+}
+
+.pcard-header h1{
+    margin: 0;
+}
+
+.pcard-header h2{
+    margin: 0.67em 0;
 }
 
 .pcard-header h2:hover {
