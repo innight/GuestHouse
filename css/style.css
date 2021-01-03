@@ -1574,10 +1574,67 @@ header.masthead .intro-text .intro-heading {
 
 /****************** Services Details **********************/
 
-#ServiceManagement .jumbotron{
-background-color: var(--scolor);
+#ServiceManagement .jumbotron {
+    background-color: var(--scolor);
 }
 
+.pcard-list {
+    display: flex;
+    padding: 3rem;
+    /* overflow-x: scroll; */
+}
+
+.pcard {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 350px;
+    width: 400px;
+    min-width: 250px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: rgb(255,255,255);
+    /* box-shadow: -1rem 0 3rem #000; */
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    box-shadow: 0 .625rem 1rem rgba(35,35,35,.1);
+
+    transition: 0.2s;
+}
+
+.pcard-list::webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.pcard-list::webkit-scrollbar-thumb {
+    background: #201c29;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+        inset -2px -2px 2px rgba(0, 0, 0, 0.25)
+}
+
+.pcard-list::-webkit-scrollbar-track {
+    background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
+}
+
+.pcard:hover {
+    transform: translateY(-1rem);
+}
+
+.pcard:hover~.pcard {
+    transform: translateX(130px);
+}
+
+.pcard:not(:first-child) {
+    margin-left: -130px;
+}
+
+.pcard-header h2:hover {
+    background: linear-gradient(90deg);
+    text-shadow: none;
+    background-clip: text;
+}
 
 
 .md-form input:not([type]),
