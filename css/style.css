@@ -1112,25 +1112,72 @@ blockquote {
     position: relative;
 }
 
-blockquote::before {
-    font-family: Arial;
-    content: "\201C";
-    color: #78C0A8;
-    font-size: 4em;
-    position: absolute;
-    left: 43px;
-    top: -30px;
+
+@media(min-width:300px) {
+    blockquote::before {
+        font-family: Arial;
+        content: "\201C";
+        color: #78C0A8;
+        font-size: 4em;
+        position: absolute;
+        left: 43px;
+        top: -30px;
+    }
+
+    blockquote::after {
+        font-family: Arial;
+        content: "\201D";
+        color: #78C0A8;
+        font-size: 4em;
+        position: absolute;
+        left: 195px;
+        top: 230px;
+    }
+}
+@media(min-width:440px) {
+    blockquote::before {
+        font-family: Arial;
+        content: "\201C";
+        color: #78C0A8;
+        font-size: 4em;
+        position: absolute;
+        left: 43px;
+        top: -30px;
+    }
+
+    blockquote::after {
+        font-family: Arial;
+        content: "\201D";
+        color: #78C0A8;
+        font-size: 4em;
+        position: absolute;
+        left: 160px;
+        top: 205px;
+    }
 }
 
-blockquote::after {
-    font-family: Arial;
-    content: "\201D";
-    color: #78C0A8;
-    font-size: 4em;
-    position: absolute;
-    left: 455px;
-    top: 125px;
+@media (min-width: 768px) {
+    blockquote::before {
+        font-family: Arial;
+        content: "\201C";
+        color: #78C0A8;
+        font-size: 4em;
+        position: absolute;
+        left: 43px;
+        top: -30px;
+    }
+
+    blockquote::after {
+        font-family: Arial;
+        content: "\201D";
+        color: #78C0A8;
+        font-size: 4em;
+        position: absolute;
+        left: 455px;
+        top: 125px;
+    }
 }
+
 
 /****************** MAIN NAV **********************/
 
@@ -1288,13 +1335,18 @@ header.masthead .intro-text .intro-heading {
 }
 
 #aboutus p {
-    line-height: 1.5;
+    line-height: 2;
     text-align: justify;
 }
 
 #aboutus .subtitle {
     font-size: 1.45rem;
     margin-bottom: .5rem;
+}
+
+#aboutus blockquote p {
+    line-height: 1.5;
+    text-align: justify;
 }
 
 /****************** SERVICES **********************/
@@ -1344,20 +1396,28 @@ header.masthead .intro-text .intro-heading {
 
 /****************** Parallax **********************/
 
-.bgimg-1,
-.bgimg-2,
-.bgimg-3 {
+#Parallax {
+    padding: 0;
+}
+
+#Parallax h3 {
+    padding-top: var(--mb-1);
+    padding-bottom: var(--mb-3);
+}
+
+#Parallax p {
+    line-height: var(--mb-4);
+}
+
+.bgimg-1 {
     position: relative;
     height: 50vh;
     opacity: 0.65;
     background-position: center center;
     background-size: cover;
-
-}
-
-.bgimg-1 {
     background-image: url("../img/EriceiraRightDirection.jpg");
     min-height: 100%;
+    margin-bottom: var(--mb-2);
 }
 
 .caption {
@@ -1505,6 +1565,16 @@ header.masthead .intro-text .intro-heading {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+
+/****************** FOOTER **********************/
+footer img {
+    /* height: 15rem;
+    width: 100%; */
+    width: 90px;
+    height: auto;
+}
+
+
 /****************** --PROPERTY HTML-- **********************/
 /****************** DIV HEADER **********************/
 
@@ -1578,15 +1648,15 @@ header.masthead .intro-text .intro-heading {
     background-color:#00D9C3;
 } */
 
-#ServiceManagement  {
-    background-color:#00D9C3;
-} 
+#ServiceManagement {
+    background-color: #00D9C3;
+}
 
 
 .pcard-list {
     display: flex;
     padding: 3rem;
-    overflow-x: scroll  ;
+    overflow-x: scroll;
 }
 
 .pcard {
@@ -1601,8 +1671,8 @@ header.masthead .intro-text .intro-heading {
     background: #f5f5f5;
     /* box-shadow: -1rem 0 3rem #000; */
     background-clip: border-box;
-    border: 0 solid rgba(0,0,0,.125);
-    box-shadow: 0 .625rem 1rem rgba(35,35,35,.1);
+    border: 0 solid rgba(0, 0, 0, .125);
+    box-shadow: 0 .625rem 1rem rgba(35, 35, 35, .1);
 
     transition: 0.2s;
 }
@@ -1635,11 +1705,11 @@ header.masthead .intro-text .intro-heading {
     margin-left: -130px;
 }
 
-.pcard-header h1{
+.pcard-header h1 {
     margin: 0;
 }
 
-.pcard-header h2{
+.pcard-header h2 {
     margin: 0.67em 0;
 }
 
