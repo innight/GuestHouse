@@ -1586,7 +1586,7 @@ header.masthead .intro-text .intro-heading {
 .pcard-list {
     display: flex;
     padding: 3rem;
-    overflow-x: scroll;
+    overflow-x: scroll  ;
 }
 
 .pcard {
