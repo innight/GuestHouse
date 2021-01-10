@@ -1133,7 +1133,12 @@ blockquote::after {
     position: absolute;
 
 }
-
+@media(min-width:200px) {
+    blockquote::after {
+        left: 150px;
+        top: 700px;
+    }
+}
 @media(min-width:300px) {
     blockquote::after {
         left: 150px;
@@ -1141,7 +1146,7 @@ blockquote::after {
     }
 }
 
-@media(min-width:440px) {
+@media(min-width:380px) {
     blockquote::after {
         left: 160px;
         top: 205px;
@@ -1453,9 +1458,9 @@ header.masthead .intro-text .intro-heading {
     height: 125px;
     border: 5px solid #fff;
     overflow: hidden;
-    top: 15px;
+    top: 1%;
     /* left: 125px; */
-    left:33%;
+    left:32%;
     border-radius: 50%;
 }
 
