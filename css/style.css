@@ -483,9 +483,12 @@ hr {
     margin-bottom: 1.5em;
 }
 
-ul,
-ol {
-    margin: 0 0 1.5em 3em;
+@media (min-width: 768px) {
+
+    ul,
+    ol {
+        margin: 0 0 1.5em 3em;
+    }
 }
 
 ul {
@@ -1112,67 +1115,41 @@ blockquote {
     position: relative;
 }
 
+blockquote::before {
+    font-family: Arial;
+    content: "\201C";
+    color: #78C0A8;
+    font-size: 4em;
+    position: absolute;
+    left: 43px;
+    top: -30px;
+}
+
+blockquote::after {
+    font-family: Arial;
+    content: "\201D";
+    color: #78C0A8;
+    font-size: 4em;
+    position: absolute;
+
+}
 
 @media(min-width:300px) {
-    blockquote::before {
-        font-family: Arial;
-        content: "\201C";
-        color: #78C0A8;
-        font-size: 4em;
-        position: absolute;
-        left: 43px;
-        top: -30px;
-    }
-
     blockquote::after {
-        font-family: Arial;
-        content: "\201D";
-        color: #78C0A8;
-        font-size: 4em;
-        position: absolute;
-        left: 195px;
-        top: 230px;
+        left: 150px;
+        top: 395px;
     }
 }
-@media(min-width:440px) {
-    blockquote::before {
-        font-family: Arial;
-        content: "\201C";
-        color: #78C0A8;
-        font-size: 4em;
-        position: absolute;
-        left: 43px;
-        top: -30px;
-    }
 
+@media(min-width:440px) {
     blockquote::after {
-        font-family: Arial;
-        content: "\201D";
-        color: #78C0A8;
-        font-size: 4em;
-        position: absolute;
         left: 160px;
         top: 205px;
     }
 }
 
 @media (min-width: 768px) {
-    blockquote::before {
-        font-family: Arial;
-        content: "\201C";
-        color: #78C0A8;
-        font-size: 4em;
-        position: absolute;
-        left: 43px;
-        top: -30px;
-    }
-
     blockquote::after {
-        font-family: Arial;
-        content: "\201D";
-        color: #78C0A8;
-        font-size: 4em;
-        position: absolute;
         left: 455px;
         top: 125px;
     }
@@ -1477,7 +1454,8 @@ header.masthead .intro-text .intro-heading {
     border: 5px solid #fff;
     overflow: hidden;
     top: 15px;
-    left: 125px;
+    /* left: 125px; */
+    left:33%;
     border-radius: 50%;
 }
 
@@ -3024,7 +3002,7 @@ footer img {
 /****************** FOOTER **********************/
 
 footer {
-    padding: 25px 0;
+    /* padding: 25px 0; */
     text-align: center;
     background-color: var(--pcolor);
     color: white;
