@@ -1124,7 +1124,7 @@ blockquote::before {
     left: 43px;
     top: -30px;
 }
-
+/* 
 blockquote::after {
     font-family: Arial;
     content: "\201D";
@@ -1151,7 +1151,7 @@ blockquote::after {
         left: 160px;
         top: 205px;
     }
-}
+} */
 
 @media (min-width: 768px) {
     blockquote::after {
@@ -1702,6 +1702,24 @@ footer img {
     background-clip: text;
 }
 
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(245, 245, 245);
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+ 
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(245, 245, 245);
+    border-radius: 3px;
+  }
 
 .md-form input:not([type]),
 .md-form input[type="text"]:not(.browser-default),
