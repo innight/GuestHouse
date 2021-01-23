@@ -1,219 +1,522 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Glocal Ericera Demo"/>
-    <meta name="author" content="João Semedo"/>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Glocal Ericera Demo" />
+  <meta name="author" content="João Semedo" />
 
-    <title>Glocal Ericeira - Houses</title>
+  <title>Glocal Ericeira - Houses</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"/>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
 
-    <!-- Custom styles for this template -->
-    <link href="css/reset.css" rel="stylesheet"/>
-    <link href="css/style.css" rel="stylesheet"/>
+  <!-- Custom styles for this template -->
+  <link href="css/reset.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
 
-    <!-- Custom fonts for this template -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"/>
+  <!-- Custom fonts for this template -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
 
-    <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
 
-    <style></style>
-  </head>
+  <style></style>
+</head>
 
-  <body id="page-top">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id=" mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="index.html#page-top">Glocal Ericeira</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto ">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a id="aSponsors" class="nav-link js-scroll-trigger" href="index.html#servicesdetails">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html#aboutus">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html#blog">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html#contactus">Contacts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/property.html">Monetize your property</a>
+<body id="page-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id=" mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html#page-top">Glocal Ericeira</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto ">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a id="aSponsors" class="nav-link js-scroll-trigger" href="index.html#servicesdetails">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#aboutus">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#contactus">Contacts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/property.html">Monetize your property</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <!-- <header id="top" class="masthead"> <div class="container h-25"> <div class="intro-text"> <div class="intro-lead-in">Welcome to Glocal Ericeira</div> <div class="intro-heading text-uppercase"> Houses, Services and other help for your time in Ericeira </div> </div> </div> </header> -->
+  <header id="top" class="propertymasthead">
+    <div class="position-relative overflow-hidden p-3 text-center propertyheader">
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <!-- <h1 class="font-weight-bold text-white">Gestão de Propriedades</h1>
+        <p class="lead font-weight-normal text-light">Realizamos a gestão de toda atividade relacionada com o
+          Alojamento, desde o registo, preparação da casa, gestão de anúncios, gestão de reservas, check-in e check out
+        </p>
+        <a class="btn btn-outline-secondary" href="#">Mais informação</a> -->
+      </div>
+  </header>
+
+  <!-- Property Management -->
+  <!-- ####################### CONTACT US ######################### -->
+  <section id="contactus">
+    <div class="container">
+      <div class="section-preview">
+        <!--Section heading-->
+        <h1 class="h1-responsive font-weight-bold text-center my-4">
+          Contacte-nos
+        </h1>
+        <!--Section description-->
+        <p class="text-center w-responsive mx-auto mb-5 lead">
+         Tem alguma questão? Por favor, não hesite em nos contatar diretamente. A nossa equipa retornará o mais rapido possivel.
+        </p>
+
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form">
+              <!--Grid row-->
+              <div class="row">
+                <!--Grid column-->
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="text" id="name" name="name" class="form-control" />
+                    <label for="name" class="active">Your name</label>
+                  </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="text" id="email" name="email" class="form-control">
+                    <label for=" email" class="active">Your email</label>
+                  </div>
+                </div>
+                <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="md-form mb-0">
+                    <input type="text" id="subject" name="subject" class="form-control" />
+                    <label for="subject" class="active">Subject</label>
+                  </div>
+                </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+                <!--Grid column-->
+                <div class="col-md-12">
+                  <div class="md-form">
+                    <textarea type="text" id="message" name="message" rows="2"
+                      class="form-control md-textarea"></textarea>
+                    <label for="message" class="active">Your message</label>
+                  </div>
+                </div>
+              </div>
+              <!--Grid row-->
+            </form>
+
+            <div class="text-center text-md-left">
+              <a class="btn btn-primary">Send</a>
+            </div>
+            <div class="status"></div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+              <li>
+                <i class="fas fa-map-marker-alt fa-2x"></i>
+                <p>Ericeira, Portugal</p>
+              </li>
+
+              <li>
+                <i class="fas fa-phone mt-4 fa-2x"></i>
+                <p>+351 961 359 830</p>
+              </li>
+
+              <li>
+                <i class="fas fa-envelope mt-4 fa-2x"></i>
+                <p>info@glocalericeira.com</p>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="PropertyManagement">
+    <div class="container">
+      <div class="col-12 text-center">
+        <h1>Gestão de Propriedades</h1>
+        <p class="lead">
+          Realizamos a gestão de toda atividade relacionada com o Alojamento, desde o registo, preparação da casa,
+          gestão de anúncios, gestão de reservas, check-in e check out, limpeza após estadia, limpeza periódica e
+          manutenção.
+          <br>
+          Fornecemos, ainda, serviços para os seus clientes, como transferes, tours, rent-a-car, aulas de surf e muitos
+          outros.
+          <strong>Serviços à sua medida e dos hóspedes!</strong>
+        </p>
+      </div>
+
+
+      <div class="row align-items-center pt-2">
+        <div class="col-xl-4 col-lg-5 col-md-6 offset-lg-1 py-3">
+          <!-- <img class="max-width-9 mb-2" src="../../assets/svg/components/consult-primary-icon.svg" alt="Image Description"> -->
+            <i class="fas fa-key fa-2x mb-2"></i>
+            <h3 class="h4 mb-4 text-success">Check-In</h3>
+          <ul class="list-unstyled">
+            <li class="d-flex mb-2 pb-1"><i
+                class="far fa-check-circle text-success font-size-xl mt-1 mr-3"></i><span>Recepção dos hóspedes, entrega
+                das
+                chaves e apresentação da casa e local</span></li>
+            <li class="d-flex mb-2 pb-1"><i
+                class="far fa-check-circle text-success font-size-xl mt-1 mr-3"></i><span>Disponibilidade 24
+                horas</span>
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
 
-    <!-- Header -->
-    <!-- <header id="top" class="masthead"> <div class="container h-25"> <div class="intro-text"> <div class="intro-lead-in">Welcome to Glocal Ericeira</div> <div class="intro-heading text-uppercase"> Houses, Services and other help for your time in Ericeira </div> </div> </div> </header> -->
-    <header id="top" class="propertymasthead">
-      <div class="position-relative overflow-hidden p-3 text-center propertyheader">
-        <div class="col-md-5 p-lg-5 mx-auto my-5">
-          <h1 class="font-weight-bold text-white">Gestão de Propriedades</h1>
-          <p class="lead font-weight-normal text-light">Realizamos a gestão de toda atividade relacionada com o Alojamento, desde o registo, preparação da casa, gestão de anúncios, gestão de reservas, check-in e check out
-          </p>
-          <a class="btn btn-outline-secondary" href="#">Mais informação</a>
+        <div class="col-xl-4 col-lg-5 col-md-6 offset-lg-1 py-3">
+          <i class="fas fa-bed fa-2x"></i>
+          <h3 class="h4 mb-4 text-success">Limpeza e Lavandaria</h3>
+          <ul class="list-unstyled">
+            <li class="d-flex mb-2 pb-1"><i
+                class="far fa-check-circle text-success font-size-xl mt-1 mr-3"></i><span>Limpeza da casa e serviço de
+                lavandaria e engomadoria</span></li>
+          </ul>
         </div>
-      </header>
+
+        <div class="col-xl-4 col-lg-5 col-md-6 offset-lg-1 py-3">
+          <i class="fas fa-gift fa-2x"></i>
+          <h3 class="h4 mb-4 text-success">Kit de Boas Vindas</h3>
+          <ul class="list-unstyled">
+            <li class="d-flex mb-2 pb-1"><i
+                class="far fa-check-circle text-success font-size-xl mt-1 mr-3"></i><span>Kit
+                de Boas Vindas ao
+                hóspedes</span></li>
+          </ul>
+        </div>
+
+        <div class="col-xl-4 col-lg-5 col-md-6 offset-lg-1 py-3">
+          <i class="far fa-life-ring fa-2x"></i>
+          <h3 class="h4 mb-4 text-success">Suporte</h3>
+          <ul class="list-unstyled">
+            <li class="d-flex mb-2 pb-1"><i
+                class="far fa-check-circle text-success font-size-xl mt-1 mr-3"></i><span>Ajuda e acompanhamento em
+                todos os processos burocráticos</span></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <!-- Property Management -->
+  </section>
 
-    <section id="PropertyManagement">
-      <div class="container">
-        <div class="col-12 text-center">
-          <h1>Gestão de Propriedades</h1>
-          <p class="lead">
-            Realizamos a gestão de toda atividade relacionada com o Alojamento, desde o registo, preparação da casa, gestão de anúncios, gestão de reservas, check-in e check out, limpeza após estadia, limpeza periódica e manutenção.
-            <br>
-            Fornecemos, ainda, serviços para os seus clientes, como transferes, tours, rent-a-car, aulas de surf e muitos outros.
-            <strong>Serviços à sua medida e dos hóspedes!</strong>
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- Property Management Details -->
-
-    <section id="PropertyManagementDetails">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7">
-            <!--Nested rows within a column-->
-            <div class="row">
-              <div class="col-6">
-                <div class="sidebar-content">
-                  <div class="d-flex align-items-center justify-content-center foo-active" style="height: 100px ; outline: none;transition: all 300ms cubic-bezier(0, .49, .27, .99);">
-                    <a>
-                      <div id="PropertyManagement0" class="p-2 bd-highlight ">Check-In</div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="sidebar-content">
-                  <div class="d-flex align-items-center justify-content-center foo" style="height: 100px ; outline: none;transition: all 300ms cubic-bezier(0, .49, .27, .99);">
-                    <a>
-                      <div id="PropertyManagement1" class="p-2 bd-highlight">Limpeza e Lavandaria</div>
-                    </a>
-                  </div>
+  <!-- Property Management Details -->
+  <!-- 
+  <section id="PropertyManagementDetails">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+       
+          <div class="row">
+            <div class="col-6">
+              <div class="sidebar-content">
+                <div class="d-flex align-items-center justify-content-center foo-active"
+                  style="height: 100px ; outline: none;transition: all 300ms cubic-bezier(0, .49, .27, .99);">
+                  <a>
+                    <div id="PropertyManagement0" class="p-2 bd-highlight ">Check-In</div>
+                  </a>
                 </div>
               </div>
             </div>
-
-            <div class="row">
-              <div class="col-6">
-                <div class="sidebar-content">
-                  <div class="d-flex align-items-center justify-content-center foo" style="height: 100px ; outline: none;transition: all 300ms cubic-bezier(0, .49, .27, .99);">
-                    <a>
-                      <div id="PropertyManagement2" class="p-2 bd-highlight">Kit de Boas Vindas</div>
-                    </a>
-                  </div>
+            <div class="col-6">
+              <div class="sidebar-content">
+                <div class="d-flex align-items-center justify-content-center foo"
+                  style="height: 100px ; outline: none;transition: all 300ms cubic-bezier(0, .49, .27, .99);">
+                  <a>
+                    <div id="PropertyManagement1" class="p-2 bd-highlight">Limpeza e Lavandaria</div>
+                  </a>
                 </div>
               </div>
-              <div class="col-6">
-                <div class="sidebar-content">
-                  <div class="d-flex align-items-center justify-content-center foo" style="height: 100px ; outline: none;transition: all 300ms cubic-bezier(0, .49, .27, .99);">
-                    <a>
-                      <div id="PropertyManagement3" class="p-2 bd-highlight">Suporte</div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-md-5">
-            <div class="main-content">
-              <h1 id="titleToChangePropertyManagementDetails" class="text-black">Check-In</h1>
-              <p id="paraToChangePropertyManagementDetails" class="para-1">
-                Recepção dos hóspedes, entrega das chaves e apresentação da casa e local. Disponibilidade 24 horas.
-              </p>
             </div>
           </div>
+
+          <div class="row">
+            <div class="col-6">
+              <div class="sidebar-content">
+                <div class="d-flex align-items-center justify-content-center foo"
+                  style="height: 100px ; outline: none;transition: all 300ms cubic-bezier(0, .49, .27, .99);">
+                  <a>
+                    <div id="PropertyManagement2" class="p-2 bd-highlight">Kit de Boas Vindas</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="sidebar-content">
+                <div class="d-flex align-items-center justify-content-center foo"
+                  style="height: 100px ; outline: none;transition: all 300ms cubic-bezier(0, .49, .27, .99);">
+                  <a>
+                    <div id="PropertyManagement3" class="p-2 bd-highlight">Suporte</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
-      </div>
-
-    </section>
-
-    <!-- Services Management -->
-    <section id="ServiceManagement">
-      <!-- <div class="jumbotron jumbotron-fluid"> -->
-        <div class="container">
-          <h1 >Serviços à sua medida</h1>
-
-          <section class="pcard-list">
-            <article class="pcard">
-              <header class="pcard-header">
-                <h1>Check-In</h1>
-                <h2 class="text-muted">€/serviço</h2>
-                <ul>
-                  <li>Recepção aos hóspedes</li>
-                  <li>Inspeção do imóvel antes da estadia</li>
-                  <li>Linha de apoio ao hóspede 24 horas</li>
-                  <li>Informações do apartamento e vila</li>
-                  <li>Presente de Boas-Vindas</li>
-                  <li>Inquérito de satisfação</li>
-                </ul>
-              </header>
-            </article>
-
-            <article class="pcard">
-              <header class="pcard-header">
-                <h1>Gestão Parcial</h1>
-                <h2 class="text-muted">€/valor reserva</h2>
-                <ul>
-                  <li>Promoção do imóvel</li>
-                  <li>Gestão de Reservas</li>
-                  <li>Rentabilização do espaço</li>
-                  <li>Relatórios de resultados mensais</li>
-                </ul>
-              </header>
-            </article>
-            <article class="pcard">
-              <header class="pcard-header">
-                <h1>Gestão Total</h1>
-                <h2 class="text-muted">€/valor reserva</h2>
-                <ul>
-                  <li>Promoção do imóvel</li>
-                  <li>Gestão de Reservas</li>
-                  <li>Rentabilização do espaço</li>
-                  <li>Comunicação com os hóspedes</li>
-                  <li>Preparação da casa</li>
-                  <li>Check-In e Check-Out</li>
-                  <li>Gestão Limpeza e Lavandaria</li>
-                  <li>Relatórios de resultados mensais</li>
-                </ul>
-              </header>
-            </article>
-
-          </section>
-
+        <div class="col-md-5">
+          <div class="main-content">
+            <h1 id="titleToChangePropertyManagementDetails" class="text-black">Check-In</h1>
+            <p id="paraToChangePropertyManagementDetails" class="para-1">
+              Recepção dos hóspedes, entrega das chaves e apresentação da casa e local. Disponibilidade 24 horas.
+            </p>
+          </div>
         </div>
       </div>
 
     </div>
-  <!-- </div> -->
-</section>
-<!-- Footer -->
+
+  </section> -->
+
+  <!-- Services Management -->
+  <!-- <section id="ServiceManagement">
+    <div class="container">
+      <h1>Serviços à sua medida</h1>
+
+      <section class="pcard-list">
+        <article class="pcard">
+          <header class="pcard-header">
+            <h1>Check-In</h1>
+            <h2 class="text-muted">€/serviço</h2>
+            <ul>
+              <li>Recepção aos hóspedes</li>
+              <li>Inspeção do imóvel antes da estadia</li>
+              <li>Linha de apoio ao hóspede 24 horas</li>
+              <li>Informações do apartamento e vila</li>
+              <li>Presente de Boas-Vindas</li>
+              <li>Inquérito de satisfação</li>
+            </ul>
+          </header>
+        </article>
+
+        <article class="pcard">
+          <header class="pcard-header">
+            <h1>Gestão Parcial</h1>
+            <h2 class="text-muted">€/valor reserva</h2>
+            <ul>
+              <li>Promoção do imóvel</li>
+              <li>Gestão de Reservas</li>
+              <li>Rentabilização do espaço</li>
+              <li>Relatórios de resultados mensais</li>
+            </ul>
+          </header>
+        </article>
+        <article class="pcard">
+          <header class="pcard-header">
+            <h1>Gestão Total</h1>
+            <h2 class="text-muted">€/valor reserva</h2>
+            <ul>
+              <li>Promoção do imóvel</li>
+              <li>Gestão de Reservas</li>
+              <li>Rentabilização do espaço</li>
+              <li>Comunicação com os hóspedes</li>
+              <li>Preparação da casa</li>
+              <li>Check-In e Check-Out</li>
+              <li>Gestão Limpeza e Lavandaria</li>
+              <li>Relatórios de resultados mensais</li>
+            </ul>
+          </header>
+        </article>
+
+      </section>
+
+    </div>
+    </div>
+
+    </div>
+
+  </section> -->
+
+  <section id="ServiceManagement2">
+    <div class="bg-white">
+      <!-- <div class="container space-3-top space-2-bottom space-4-top--lg space-3-bottom--lg"> -->
+      <div class="container">
+        <!-- Title -->
+        <!-- <div class="w-md-80 w-lg-60 text-center mx-md-auto mb-9"> -->
+        <div class="text-center mx-md-auto">
+          <h2>Serviços à sua medida</h2>
+          <p class="lead">Escolha os serviços que lhe faça mais sentido</p>
+        </div>
+        <!-- End Title -->
+
+        <div class="row align-items-lg-center">
+          <div class="col-md-6 col-lg-4 order-lg-2 offset-md-3 offset-lg-0 mb-5 mb-md-0">
+            <!-- Pricing -->
+            <div class="bg-success border rounded pt-5 p-5">
+              <div class="mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h4 class="h6 text-white mb-0">Gestão Parcial</h4>
+                  <span class="u-label u-label--light u-label--sm">Recomendado</span>
+                </div>
+                <div class="text-white mb-2">
+                  <span class="h1">€</span>
+                  <span>/ valor reserva</span>
+                </div>
+                <ul class="list-unstyled text-white mb-4">
+                  <li class="d-flex align-items-center py-2">
+                    <i class="fa fa-check font-size-13 mr-3"></i>
+                    Promoção do imóvel
+                  </li>
+                  <li class="d-flex align-items-center py-2">
+                    <i class="fa fa-check font-size-13 mr-3"></i>
+                    Gestão de Reservas
+                  </li>
+                  <li class="d-flex align-items-center py-2">
+                    <i class="fa fa-check font-size-13 mr-3"></i>
+                    Rentabilização do espaço
+                  </li>
+                  <li class="d-flex align-items-center py-2">
+                    <i class="fa fa-check font-size-13 mr-3"></i>
+                    Relatórios de resultados mensais
+                  </li>
+                </ul>
+              </div>
+              <!-- <button type="button" class="btn btn-block btn-sm btn-light">Subscribe Now</button> -->
+            </div>
+            <!-- End Pricing -->
+          </div>
+
+          <div class="col-md-6 col-lg-4 order-lg-1 mb-5 mb-md-0">
+            <!-- Pricing -->
+            <div class="bg-white border rounded py-7 p-5">
+              <div class="mb-4">
+                <h4 class="h6 text-secondary mb-3">Check-In</h4>
+                <div class="mb-2">
+                  <span class="h1 text-dark">€</span>
+                  <span>/ serviço</span>
+                </div>
+                <ul class="list-unstyled mb-4">
+                  <li class="d-flex align-items-center py-2">
+                    <i class="fa fa-check text-purple font-size-13 mr-3"></i>
+                    Recepção aos hóspedes
+                  </li>
+                  <li class="d-flex align-items-center py-2">
+                    <i class="fa fa-check text-purple font-size-13 mr-3"></i>
+                    Inspeção do imóvel antes da estadia
+                  </li>
+                  <li class="d-flex align-items-center py-2">
+                    <i class="fa fa-check text-purple font-size-13 mr-3"></i>
+                    Linha de apoio ao hóspede 24 horas
+                  </li>
+                  <li class="d-flex align-items-center py-2">
+                    <i class="fa fa-check text-purple font-size-13 mr-3"></i>
+                    Informações do apartamento e vila
+                  </li>
+                  <li class="d-flex align-items-center py-2">
+                    <i class="fa fa-check text-purple font-size-13 mr-3"></i>
+                    Presente de Boas-Vindas
+                  </li>
+                  <li class="d-flex align-items-center py-2">
+                    <i class="fa fa-check text-purple font-size-13 mr-3"></i>
+                    Inquérito de satisfação
+                  </li>
+                </ul>
+              </div>
+              <!-- <button type="button" class="btn btn-block btn-sm btn-purple">Start Free Trial</button> -->
+            </div>
+            <!-- End Pricing -->
+          </div>
+
+          <div class="col-md-6 col-lg-4 order-lg-3">
+            <!-- Pricing -->
+            <div class="bg-white border rounded py-7 p-5">
+              <div class="mb-4">
+                <h4 class="h6 text-secondary mb-3">Gestão Total</h4>
+                <div class="mb-2">
+                  <span class="h1 text-dark">€</span>
+                  <span>/ valor reserva</span>
+                </div>
+                <ul class="list-unstyled mb-4">
+                  <li class="d-flex align-items-center py-2">
+                    <i class="fa fa-check text-purple font-size-13 mr-3"></i>
+                    Promoção do imóvel
+                  </li>
+                  <li class="d-flex align-items-center py-2">
+                    <i class="fa fa-check text-purple font-size-13 mr-3"></i>
+                    Gestão de Reservas
+                  </li>
+                  <li class="d-flex align-items-center py-2">
+                    <i class="fa fa-check text-purple font-size-13 mr-3"></i>
+                    Rentabilização do espaço
+                  </li>
+                  <li class="d-flex align-items-center py-2">
+                    <i class="fa fa-check text-purple font-size-13 mr-3"></i>
+                    Comunicação com os hóspedes
+                  </li>
+                  <li class="d-flex align-items-center py-2">
+                    <i class="fa fa-check text-purple font-size-13 mr-3"></i>
+                    Preparação da casa
+                  </li>
+                  <li class="d-flex align-items-center py-2">
+                    <i class="fa fa-check text-purple font-size-13 mr-3"></i>
+                    Check-In e Check-Out
+                  </li>
+                  <li class="d-flex align-items-center py-2">
+                    <i class="fa fa-check text-purple font-size-13 mr-3"></i>
+                    Gestão Limpeza e Lavandaria
+                  </li>
+                  <li class="d-flex align-items-center py-2">
+                    <i class="fa fa-check text-purple font-size-13 mr-3"></i>
+                    Relatórios de resultados mensais
+                  </li>
+                </ul>
+              </div>
+              <!-- <button type="button" class="btn btn-block btn-sm btn-purple">See Team Plans</button> -->
+            </div>
+            <!-- End Pricing -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Footer -->
   <footer>
     <div class="container">
       <div class="row">
@@ -256,10 +559,14 @@
     </div>
   </footer>
 
-<!-- Bootstrap core JavaScript -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-<script src="js/index.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
 
 </body>
 

@@ -21,6 +21,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
 
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
@@ -32,9 +35,13 @@
 
 <body id="page-top">
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id=" mainNav">
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id=" mainNav"> -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-ericeira fixed-top" id=" mainNav">
     <div class="container">
-      <a class="navbar-brand" href="#page-top">Glocal Ericeira</a>
+      <!-- <a class="navbar-brand" href="#page-top">Glocal Ericeira</a> -->
+      <a class="navbar-brand" href="#">
+        <img src="/img/logotipo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+      </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -43,22 +50,26 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+            <a id="aSponsors" class="nav-link js-scroll-trigger" href="/services.html">Services</a>
           </li>
           <li class="nav-item">
-            <a id="aSponsors" class="nav-link js-scroll-trigger" href="#servicesdetails">Services</a>
+            <a id="aSponsors" class="nav-link js-scroll-trigger" href="/houses.html">Houses</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#aboutus">About</a>
+            <a class="nav-link js-scroll-trigger" href="/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/contacts.html">Contacts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/property.html">Monetize your property</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contactus">Contacts</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/property.html">Monetize your property</a>
+            <span class="flag-icon flag-icon-us flag-icon-squared"></span>
+            <span class="flag-icon flag-icon-pt flag-icon-squared"></span>
           </li>
         </ul>
       </div>
@@ -98,32 +109,36 @@
   <section id="services">
     <div class="container services">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-3">
           <div class="info-left">
             <div class="icon heart">
-            <svg width="7em" height="7em" viewbox="0 0 16 16" class="bi bi-house-door-fill" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z" />
-              <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
-            </svg>
-          </div>
+              <a href="/houses.html">
+                <svg width="7em" height="7em" viewbox="0 0 16 16" class="bi bi-house-door-fill" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z" />
+                  <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                </svg>
+              </a>
+            </div>
             <h2>Houses</h2>
             <p>Short Term Rental Apartments, Villas or Rooms in Ericeira.</p>
           </div>
         </div>
         <!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        <div class="col-lg-3">
           <div class="info-top">
             <div class="icon heart">
-            <svg width="7em" height="7em" viewbox="0 0 16 16" class="bi bi-hammer" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M9.812 1.952a.5.5 0 0 1-.312.89c-1.671 0-2.852.596-3.616 1.185L4.857 5.073V6.21a.5.5 0 0 1-.146.354L3.425 7.853a.5.5 0 0 1-.708 0L.146 5.274a.5.5 0 0 1 0-.706l1.286-1.29a.5.5 0 0 1 .354-.146H2.84C4.505 1.228 6.216.862 7.557 1.04a5.009 5.009 0 0 1 2.077.782l.178.129z" />
-              <path fill-rule="evenodd"
-                d="M6.012 3.5a.5.5 0 0 1 .359.165l9.146 8.646A.5.5 0 0 1 15.5 13L14 14.5a.5.5 0 0 1-.756-.056L4.598 5.297a.5.5 0 0 1 .048-.65l1-1a.5.5 0 0 1 .366-.147z" />
-            </svg>
-          </div>
+              <a href="/services.html">
+                <svg width="7em" height="7em" viewbox="0 0 16 16" class="bi bi-hammer" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.812 1.952a.5.5 0 0 1-.312.89c-1.671 0-2.852.596-3.616 1.185L4.857 5.073V6.21a.5.5 0 0 1-.146.354L3.425 7.853a.5.5 0 0 1-.708 0L.146 5.274a.5.5 0 0 1 0-.706l1.286-1.29a.5.5 0 0 1 .354-.146H2.84C4.505 1.228 6.216.862 7.557 1.04a5.009 5.009 0 0 1 2.077.782l.178.129z" />
+                  <path fill-rule="evenodd"
+                    d="M6.012 3.5a.5.5 0 0 1 .359.165l9.146 8.646A.5.5 0 0 1 15.5 13L14 14.5a.5.5 0 0 1-.756-.056L4.598 5.297a.5.5 0 0 1 .048-.65l1-1a.5.5 0 0 1 .366-.147z" />
+                </svg>
+              </a>
+            </div>
             <h2>Services</h2>
             <p>
               Glocal Ericeira mission is to bring you the best living experience during your trip to Ericeira with local
@@ -132,19 +147,40 @@
           </div>
         </div>
         <!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        <div class="col-lg-3">
           <div class="info-right">
             <div class="icon heart">
-            <svg width="7em" height="7em" viewbox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z" />
-            </svg>
-          </div>
+              <a href="/contacts.html">
+                <svg width="7em" height="7em" viewbox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z" />
+                </svg>
+              </a>
+            </div>
             <h2>Support</h2>
             <p>
               24 hours availability. Glocal Ericeira is a tourism business commited to customer service, quality and
               customized experiences in Ericeira.
+            </p>
+          </div>
+        </div>
+        <!-- /.col-lg-4 -->
+        <!-- /.col-lg-3 -->
+        <div class="col-lg-3">
+          <div class="info-right">
+            <div class="icon heart">
+              <a href="/property.html">
+                <svg width="7em" height="7em" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                  class="bi bi-wallet2" viewBox="0 0 16 16">
+                  <path
+                    d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z" />
+                </svg>
+              </a>
+            </div>
+            <h2>Management</h2>
+            <p>
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
             </p>
           </div>
         </div>
@@ -159,10 +195,10 @@
       <!-- 21:9 aspect ratio -->
       <div class="row justify-content-center">
         <div class="col-md-8 col-sm-10">
-      <div class="embed-responsive embed-responsive-21by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LKGCxYXVztY?autoplay=1&mute=1"
-          allowfullscreen="allowfullscreen" ></iframe>
-      </div>
+          <div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LKGCxYXVztY?autoplay=1&mute=1"
+              allowfullscreen="allowfullscreen"></iframe>
+          </div>
         </div>
       </div>
     </div>
@@ -173,10 +209,11 @@
       <!-- Example row of columns -->
       <div class="row justify-content-center">
         <div class="card-columns">
-          <div class="card mb-3" style="max-width: 18rem">
-           
-              <img class="card-img-top" src="/img/Ericeirapraiasul.jpg" alt="Card image" style="width:100%">
-         
+
+          <div class="card mb-3">
+
+            <img class="card-img-top" src="/img/Ericeirapraiasul.jpg" alt="Card image" style="width:100%">
+
             <div class="card-body ">
               <h5 class="card-title text-dark">5 Things to Do in Ericeira</h5>
               <p class="card-text">
@@ -190,10 +227,11 @@
               </button>
             </div>
           </div>
-          <div class="card mb-3" style="max-width: 18rem">
-            
-              <img class="card-img-top" src="/img/dolphin-jumping-swimming-sea-ocean-water-nature.jpg" alt="Card image" style="width:100%">
-         
+          <div class="card mb-3">
+
+            <img class="card-img-top" src="/img/dolphin-jumping-swimming-sea-ocean-water-nature.jpg" alt="Card image"
+              style="width:100%">
+
             <div class="card-body ">
               <h5 class="card-title text-dark">Dolphins in Ericeira</h5>
               <p class="card-text">
@@ -208,10 +246,10 @@
               </button>
             </div>
           </div>
-          <div class="card mb-3" style="max-width: 18rem">
-          
-              <img class="card-img-top" src="/img/ericeira-portugal-6.jpg" alt="Card image" style="width:100%">
-          
+          <div class="card  mb-3">
+
+            <img class="card-img-top" src="/img/ericeira-portugal-6.jpg" alt="Card image" style="width:100%">
+
             <div class="card-body ">
               <h5 class="card-title text-dark">Tourism World day</h5>
               <p class="card-text">
@@ -360,264 +398,7 @@
   </div>
   <!-- END Modal -->
 
-  <!-- ####################### ABOUT US ######################### -->
-  <section id="aboutus">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-lg-6">
-          <h1>Who are We? What We Do?</h1>
-          <p>The increase in the variety of the standardized offer and the loss of the original and typical of a country
-            in terms of tourism, as well as the comparison between what is already done in other countries, has led to
-            the identification of the concept, GLOCAL Tourism – a global scope and a local presence. The core business
-            is to allow experiences more adjusted and customized to the reality of the region, Ericeira.</p>
-          <p>Ericeira has been growing as a village and tourist landmark. One of the driving forces behind this growth
-            was the consecration of Ericeira as a World Surfing Reserve. There are 4 kms of coast that covers the
-            Ericeira World Surfing Reserve, the only one in Europe, and second in the world, and includes seven
-            world-class waves.</p>
-        </div>
-        <div class="col-sm-12 col-lg-6">
-          <!-- <h2 style="margin-left: 4.25rem">Vision</h2> -->
 
-          <h1 class="text-center">Vision</h1>
-          <blockquote>
-            <i class="fas fa-quote-left"></i>
-            Because tourism experiences do not have to be the same, we offer a quality service and trust with local
-            experiences and experiences, contributing to the development and valorization of the heritage,
-            establishing itself as a reference in tourism in the region.” We want to stimulate the development of the
-            singularities of the region and the local economy.
-            <i class="fas fa-quote-right"></i>
-          </blockquote>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ####################### PARALLAX ######################### -->
-  <section id="Parallax">
-    <div class="container-fluid">
-      <div class="bgimg-1">
-        <div class="caption">
-          <span class="border" style="background-color:transparent;font-size: 35px;color: #f7f7f7;font-weight: 700;">We
-            work in 2 ways</span>
-        </div>
-      </div>
-      <div class="row justify-content-center" style="background-color:white">
-        <div class="col-sm-11 col-lg-10 col-md-10 text-justify">
-          <h3 class="lato">For the Guest</h3>
-          <p>Want to offer your a diverse range of services at a competitive price. We can give you any piece of advice
-            and help you with special arrangements for your holiday such as maid service, tours, transfers, food,
-            babysitting, rent-a-car, and much other services, in order to make your vacation fantastic!</p>
-        </div>
-
-      </div>
-      <div class="row justify-content-center" style="color:#ddd;background: var(--pcolor)">
-        <div class="col-sm-11 col-lg-10 col-md-10 text-justify">
-          <h3 class="lato">For the Owner</h3>
-          <p>
-            For your best comfort, we make the total or partial management of your accommodation with competitive
-            prices. We will monetize and manage your house or apartment.
-          </p>
-          <p>We offer to the owners all the necessary
-            services, so that their property is not a concern, but a source of income. We offer an excellent service to
-            the guest who chooses a Glocal Ericeira property.</p>
-        </div>
-      </div>
-
-    </div>
-    </div>
-  </section>
-  <!-- ####################### SERVICESDETAILS ######################### -->
-  <section id="servicesdetails">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-12">
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="single-box">
-                      <div class="img-area">
-                        <img src="img/pexels-miggy-rivera-5665053.jpg" alt="">
-                      </div>
-                      <div class="img-text">
-                        <h2>Transfers</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="single-box">
-                      <div class="img-area">
-                        <img src="img/tours.jpg" alt="">
-                      </div>
-                      <div class="img-text">
-                        <h2>Tours</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="single-box">
-                      <div class="img-area">
-                        <img src="img/surflessons.jpg" alt="">
-                      </div>
-                      <div class="img-text">
-                        <h2>Surf Lessons</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="single-box">
-                      <div class="img-area">
-                        <img src="img/markus-winkler-x2cmIGqdboQ-unsplash.jpg" alt="">
-                      </div>
-                      <div class="img-text">
-                        <h2>Material Rental</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="single-box">
-                      <div class="img-area">
-                        <img src="img/pexels-cottonbro-4934592 (1).jpg" alt="">
-                      </div>
-                      <div class="img-text">
-                        <h2>Boat Trip</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="single-box">
-                      <div class="img-area">
-                        <img src="img/bath-bomb-spa-tub.jpg" alt="">
-                      </div>
-                      <div class="img-text">
-                        <h2>Massages at Home</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-  <!-- ####################### CONTACT US ######################### -->
-  <section id="contactus">
-    <div class="container">
-      <div class="section-preview">
-        <!--Section heading-->
-        <h1 class="h1-responsive font-weight-bold text-center my-4">
-          Contact us
-        </h1>
-        <!--Section description-->
-        <p class="text-center w-responsive mx-auto mb-5">
-          Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you
-          within a matter of hours to help you.
-        </p>
-
-        <div class="row">
-          <!--Grid column-->
-          <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form">
-              <!--Grid row-->
-              <div class="row">
-                <!--Grid column-->
-                <div class="col-md-6">
-                  <div class="md-form mb-0">
-                    <input type="text" id="name" name="name" class="form-control" />
-                    <label for="name" class="active">Your name</label>
-                  </div>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-6">
-                  <div class="md-form mb-0">
-                    <input type="text" id="email" name="email" class="form-control">
-                    <label for=" email" class="active">Your email</label>
-                  </div>
-                </div>
-                <!--Grid column-->
-
-              </div>
-              <!--Grid row-->
-
-              <!--Grid row-->
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="md-form mb-0">
-                    <input type="text" id="subject" name="subject" class="form-control" />
-                    <label for="subject" class="active">Subject</label>
-                  </div>
-                </div>
-              </div>
-              <!--Grid row-->
-
-              <!--Grid row-->
-              <div class="row">
-                <!--Grid column-->
-                <div class="col-md-12">
-                  <div class="md-form">
-                    <textarea type="text" id="message" name="message" rows="2"
-                      class="form-control md-textarea"></textarea>
-                    <label for="message" class="active">Your message</label>
-                  </div>
-                </div>
-              </div>
-              <!--Grid row-->
-            </form>
-
-            <div class="text-center text-md-left">
-              <a class="btn btn-primary">Send</a>
-            </div>
-            <div class="status"></div>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-md-3 text-center">
-            <ul class="list-unstyled mb-0">
-              <li>
-                <i class="fas fa-map-marker-alt fa-2x"></i>
-                <p>Ribamar, Portugal</p>
-              </li>
-
-              <li>
-                <i class="fas fa-phone mt-4 fa-2x"></i>
-                <p>+351 961 359 830</p>
-              </li>
-
-              <li>
-                <i class="fas fa-envelope mt-4 fa-2x"></i>
-                <p>info@glocalericeira.com</p>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Footer -->
   <footer>
