@@ -39,7 +39,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-ericeira fixed-top" id=" mainNav">
     <div class="container">
       <!-- <a class="navbar-brand" href="#page-top">Glocal Ericeira</a> -->
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/index.html">
         <img src="/img/logotipo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
       </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
@@ -53,7 +53,7 @@
             <a id="aSponsors" class="nav-link js-scroll-trigger" href="/services.html">Services</a>
           </li>
           <li class="nav-item">
-            <a id="aSponsors" class="nav-link js-scroll-trigger" href="/houses.html">Houses</a>
+            <a id="aSponsors" class="nav-link js-scroll-trigger" href="#">Houses</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="/about.html">About</a>
@@ -65,7 +65,7 @@
             <a class="nav-link js-scroll-trigger" href="/property.html">Monetize your property</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
+            <a class="nav-link js-scroll-trigger" href="/index.html#blog">Blog</a>
           </li>
           <li class="nav-item">
             <span class="flag-icon flag-icon-us flag-icon-squared"></span>
@@ -112,7 +112,7 @@
         <div class="col-lg-3">
           <div class="info-left">
             <div class="icon heart">
-              <a href="/houses.html">
+              <a href="#">
                 <svg width="7em" height="7em" viewbox="0 0 16 16" class="bi bi-house-door-fill" fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -212,7 +212,7 @@
 
           <div class="card mb-3">
 
-            <img class="card-img-top" src="/img/Ericeirapraiasul.jpg" alt="Card image" style="width:100%">
+            <img class="img-responsive" src="/img/Ericeirapraiasul.jpg" alt="Card image" >
 
             <div class="card-body ">
               <h5 class="card-title text-dark">5 Things to Do in Ericeira</h5>
@@ -229,8 +229,8 @@
           </div>
           <div class="card mb-3">
 
-            <img class="card-img-top" src="/img/dolphin-jumping-swimming-sea-ocean-water-nature.jpg" alt="Card image"
-              style="width:100%">
+            <img class="img-responsive" src="/img/dolphin-jumping-swimming-sea-ocean-water-nature.jpg" alt="Card image"
+             >
 
             <div class="card-body ">
               <h5 class="card-title text-dark">Dolphins in Ericeira</h5>
@@ -248,7 +248,7 @@
           </div>
           <div class="card  mb-3">
 
-            <img class="card-img-top" src="/img/ericeira-portugal-6.jpg" alt="Card image" style="width:100%">
+            <img class="img-responsive" src="/img/ericeira-portugal-6.jpg" alt="Card image" >
 
             <div class="card-body ">
               <h5 class="card-title text-dark">Tourism World day</h5>
@@ -398,6 +398,23 @@
   </div>
   <!-- END Modal -->
 
+  <!-- CAROUSEL SLIDER -->
+
+<section>
+  <div class="container">
+    <!-- <h2 class="text-center">Our Partners</h2> -->
+    <section class="customer-logos slider">
+        <div class="slide"><img src="img/airbnb-logo.png" alt="logo"></div>
+        <div class="slide"><img src="img/facebook.png" alt="logo"></div>
+        <div class="slide"><img src="img/google.png" alt="logo"></div>
+        <div class="slide"><img src="img/instagram.png" alt="logo"></div>
+        <div class="slide"><img src="img/booking-logo.png" alt="logo"></div>
+        <div class="slide"><img src="img/twitter.png" alt="logo"></div>
+        <div class="slide"><img src="img/vrbo-Logo.png" alt="logo"></div>
+        <div class="slide"><img src="img/tripadvisor-logo.png" alt="logo"></div>
+    </section>
+</div>
+</section>
 
 
   <!-- Footer -->
@@ -450,7 +467,34 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script src="js/index.js"></script>
+  <script>
+    
+    $(document).ready(function(){
+        $('.customer-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover:false,
+            responsive: [{
+                breakpoint: 768,
+                setting: {
+                    slidesToShow:4
+                }
+            }, {
+                breakpoint: 520,
+                setting: {
+                    slidesToShow: 3
+                }
+            }]
+        });
+    });
+
+    </script>
 
 </body>
 
