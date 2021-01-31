@@ -470,6 +470,8 @@ big {
 --------------------------------------------- */
 body {
     background: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 hr {
@@ -977,10 +979,12 @@ body {
 
 
 :root {
-    --pcolor: #294558;
+    --pcolor: #214A56;
+
     --scolor: #00c2a9;
     --tcolor: #b7b7b7;
     --qcolor: #f6f5fa;
+
 
     /*========== Margenes ==========*/
     --mb-1: .5rem;
@@ -1006,7 +1010,13 @@ html {
     scroll-behavior: smooth;
 }
 
+.text-success2 {
+    color: var(--scolor);
+}
 
+.bg-success2 {
+    background-color: var(--scolor);
+}
 
 p {
     line-height: 1.75;
@@ -1399,32 +1409,36 @@ blockquote .fa-quote-right {
     color: #67666a;
 }
 
-    /* start of desktop styles */
+/* start of desktop styles */
 
-    @media screen and (min-width: 991px) {
-        /* start of large tablet styles */
-        .img-responsive {
-          min-width: 70%;
-          height: 15vw;
-        }
-   }
-   
-   @media screen and (max-width: 767px) {
-        /* start of medium tablet styles */
-        /* Adding a fixed/percentage min-width could ensure that the image doesn't get too small */
-        .img-responsive {
-          min-width: 30%;
-        }
-   }
-   
-   @media screen and (max-width: 479px) {
-        /* start of phone styles */
-        /* It's possible to hide the image if the screen becomes too small */
-        .img-responsive {
-          min-width: 10%;
-         
-        }
-   }
+@media screen and (min-width: 991px) {
+
+    /* start of large tablet styles */
+    .img-responsive {
+        min-width: 70%;
+        height: 15vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    /* start of medium tablet styles */
+    /* Adding a fixed/percentage min-width could ensure that the image doesn't get too small */
+    .img-responsive {
+        min-width: 30%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+
+    /* start of phone styles */
+    /* It's possible to hide the image if the screen becomes too small */
+    .img-responsive {
+        min-width: 10%;
+
+    }
+}
+
 /****************** ABOUT **********************/
 /****************** Parallax **********************/
 
@@ -1599,40 +1613,47 @@ blockquote .fa-quote-right {
 
 /****************** SLIDER PARTNERS **********************/
 
-.slick-slide{
+.slick-slide {
     margin: 0 20px;
 }
-.slick-slide img{
+
+.slick-slide img {
     width: 100%;
 }
-.slick-slider{
+
+.slick-slider {
     position: relative;
     display: block;
     box-sizing: border-box;
 }
-.slick-list{
+
+.slick-list {
     position: relative;
     display: block;
     overflow: hidden;
     margin: 0;
     padding: 0;
 }
-.slick-track{
+
+.slick-track {
     position: relative;
     top: 0;
     left: 0;
     display: block
 }
-.slick-slide{
+
+.slick-slide {
     display: none;
     float: left;
     height: 100%;
     min-height: 1px;
 }
-.slick-slide img{
+
+.slick-slide img {
     display: block;
 }
-.slick-initialized .slick-slide{
+
+.slick-initialized .slick-slide {
     display: block;
 }
 
@@ -3164,12 +3185,24 @@ h3 {
 
 /****************** FOOTER **********************/
 
+
+
 footer {
     /* padding: 25px 0; */
-    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: var(--pcolor);
     color: white;
+    text-align: center;
 }
+.content {
+    flex: 1 0 auto;
+  }
+  footer {
+    flex-shrink: 0;
+  }
+
 
 footer svg {
     color: white;
